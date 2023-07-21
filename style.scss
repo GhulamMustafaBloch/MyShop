@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import "variable";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $RubikFont;
+}
+.header-section {
+    padding: 0 4.5rem;
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 999;
+    .nav-bar {
+        height: 5.75rem;
+        max-width: 81rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.125rem 3rem;
+        background: $bodyColor;
+        align-items: center;
+        box-shadow: 0rem 0.25rem 1.5625rem 0rem rgba(107, 107, 107, 0.08);
+        border-radius: 0.75rem;
+        .nav-logo-and-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            .nav-logo {
+                display: flex;
+                align-items: center;
+            }
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $NeutralGrey-01;
+                        font-weight: $regular;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+        .nav-social-media-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            p {
+                color: $NeutralGrey-01;
+                font-size: 0.875rem;
+                font-weight: $regular;
+            }
+            .btn-primary {
+                color: $neutral-grey-05;
+                background: $primaryMainColor;
+                padding: 0.75rem 2rem;
+                font-size: 0.875rem;
+                border-radius: 0.5rem;
+                box-shadow: 0rem 0.5625rem 1.5625rem 0rem rgba(234, 90, 67, 0.35);
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.bg-section {
+    background: url("./images/Group\ 1260.png");
+    width: 100%;
+    height: 13.75rem;
+    opacity: 0.05;
+}
+.banner-section {
+    padding: 0 4.5rem 0 4.4969rem;
+    position: absolute;
+    top: 9.8125rem;
+    left: 0;
+    right: 0;
+    .banner {
+        background: linear-gradient(0deg, #ffc9c0 0%, #ffe8e4 100%);
+        max-width: 81rem;
+        margin: auto;
+        height: 4rem;
+        border-radius: 2.125rem;
+        background: url("./images/offer\ bg.png");
+        display: flex;
+        justify-content: space-between;
+        padding: 1.125rem 3rem;
+        align-items: center;
+        .spacial-offer {
+            display: flex;
+            align-items: center;
+            p {
+                color: $priceColor;
+                font-size: 1rem;
+                font-weight: $regular;
+                padding-left: 0.75rem;
+            }
+            button {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                font-weight: $bold;
+                background: none;
+                border: none;
+                font-size: 1rem;
+                padding-left: 0.875rem;
+                color: $primaryMainColor;
+                cursor: pointer;
+                text-decoration-line: underline;
+            }
+        }
+        .spacial-offer-text {
+            color: $priceColor;
+            font-weight: $medium;
+            font-size: 1rem;
+        }
+    }
+}
+.shop-card-and-listing-section {
+    padding: 3rem 4.5rem;
+    .shop-card-and-listing-section-title {
+        font-size: 3rem;
+        font-weight: $medium;
+        color: $blackColor;
+    }
+    .shop-card-and-listing {
+        display: flex;
+        gap: 2.625rem;
+        .shop-listing {
+            min-width: 17.625rem;
+            padding-top: 3.0625rem;
+            .DEALS-AND-OFFERS {
+                p {
+                    font-size: 0.75rem;
+                    font-weight: $medium;
+                    color: $TextGrayColor;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 0.125rem;
+                        height: 1rem;
+                        background: $TextGrayColor;
+                        left: 3.75rem;
+                    }
+                }
+                ul {
+                    padding-top: 2.0625rem;
+                    list-style: none;
+                    li {
+                        color: $NeutralGrey-01;
+                        font-size: 1rem;
+                        font-weight: $regular;
+                    }
+                    li:nth-child(2) {
+                        padding-top: 1.5rem;
+                    }
+                }
+            }
+            .SERVICES-CATEGORIES {
+                padding-top: 3.0625rem;
+                span {
+                    color: $NeutralGrey-01;
+                    font-size: 0.875rem;
+                    font-weight: $regular;
+                }
+                p {
+                    max-width: 12.3963rem;
+                    color: $NeutralGrey-01;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                }
+                .SERVICES-CATEGORIES-title {
+                    font-size: 0.75rem;
+                    font-weight: $medium;
+                    color: $TextGrayColor;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 0.125rem;
+                        height: 1rem;
+                        background: $TextGrayColor;
+                        left: 3.75rem;
+                    }
+                }
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 2.0625rem;
+                    h5 {
+                        color: $priceColor;
+                        font-weight: $medium;
+                        font-size: 1rem;
+                    }
+                }
+                .Computer-Guided {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 2.125rem;
+                }
+                .Computer {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 1.5rem;
+                }
+            }
+            .form {
+                padding-top: 3.0625rem;
+                .SELLER {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        display: flex;
+                        align-items: center;
+                        color: $TextGrayColor;
+                        font-weight: $medium;
+                        font-size: 0.75rem;
+                        letter-spacing: 0.0625rem;
+                    }
+                    .selle {
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            width: 0.125rem;
+                            height: 1rem;
+                            background: $TextGrayColor;
+                            left: 3.75rem;
+                        }
+                    }
+                    .Clear {
+                        font-weight: 500;
+                        color: $Secondary-Main;
+                    }
+                }
+                .Voxel {
+                    padding-top: 2.0625rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                .form-check {
+                    gap: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    padding-top: 1.5rem;
+                }
+                .form-check-input {
+                    display: block;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    border-radius: 0.25rem;
+                    border: 0.125rem solid gray;
+                    cursor: pointer;
+                    opacity: 0;
+                    &:checked + label {
+                        font-weight: $medium;
+                        color: $priceColor;
+                        &::before {
+                            border: none;
+                            background: $Secondary-Main;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect x='2' y='2' width='20' height='20' rx='4' fill='%231A90D2'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.70711 11.2929C9.31658 10.9024 8.68342 10.9024 8.29289 11.2929C7.90237 11.6834 7.90237 12.3166 8.29289 12.7071L10.2929 14.7071C10.6834 15.0976 11.3166 15.0976 11.7071 14.7071L15.7071 10.7071C16.0976 10.3166 16.0976 9.68342 15.7071 9.29289C15.3166 8.90237 14.6834 8.90237 14.2929 9.29289L11 12.5858L9.70711 11.2929Z' fill='white'/%3E%3C/svg%3E");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+                .form-check-label {
+                    color: $NeutralGrey-01;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        border-radius: 0.25rem;
+                        border: 0.125rem solid $NeutralGrey-02;
+                        left: 4.375rem;
+                    }
+                }
+            }
+        }
+        .shop-cards {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            .shop-card {
+                width: 19.125rem;
+                border-radius: 1rem;
+                border: 0.125rem solid $NeutralGrey-03;
+                &:nth-child(odd) {
+                    &::before {
+                        position: absolute;
+                        content: "BEST SELLER";
+                        padding: 0.5rem 1.5rem;
+                        border-radius: 0.875rem 0rem 1.25rem 0rem;
+                        background: $bgtertiaryColor;
+                        color: $bodyColor;
+                    }
+                }
+                &:nth-child(2) {
+                    .card-content {
+                        .btns {
+                            .btn {
+                                display: flex;
+                                gap: 0.5rem;
+                                align-items: center;
+                                justify-content: center;
+                                width: 22.375rem;
+                                width: 16.125rem;
+                                background: $Secondary-Main;
+                                color: $bodyColor;
+                                border: none;
+                                span {
+                                    display: inherit;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    .card-content {
+                        .btns {
+                            .btn {
+                                width: 16.125rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 0.5rem;
+                                display: inherit;
+                                border: 0.0625rem solid $SuccessMain-Light;
+                                background: $SuccessMain-Lighter;
+                                color: $success-main-dark;
+                                font-size: 0.75rem;
+                            }
+                        }
+                    }
+                }
+                .card-img {
+                    max-width: 16.125rem;
+                    height: 16.125rem;
+                    background: $NeutralGrey-04;
+                    margin: auto;
+                    margin-top: 1.5rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .card-content {
+                    padding: 1rem 1.5rem;
+                    .Implant-Planning {
+                        position: relative;
+                        h6 {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            font-size: 1.25rem;
+                            font-weight: $regular;
+                            color: $priceColor;
+                            line-height: 1.75rem;
+                            &:hover {
+                                span {
+                                    margin-top: 1.25rem;
+                                    position: absolute;
+                                    width: 16.875rem;
+                                    height: auto;
+                                    padding: 0.625rem;
+                                    white-space: wrap;
+                                    left: -1.25rem;
+                                    top: 1.25rem;
+                                    border-radius: 0.3125rem;
+                                    background-color: $Secondary-Main;
+                                    color: $bodyColor;
+                                    text-overflow: initial;
+                                    &::before {
+                                        position: absolute;
+                                        content: "";
+                                        width: 1.5rem;
+                                        height: 1.5rem;
+                                        background-color: $Secondary-Main;
+                                        left: 50%;
+                                        top: -0.4375rem;
+                                        transform: rotate(45deg);
+                                        z-index: -1;
+                                    }
+                                }
+                            }
+                        }
+                        h5 {
+                            padding-top: 0.5rem;
+                            color: $priceColor;
+                            font-size: 1.5rem;
+                            font-weight: $medium;
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+
+                            span {
+                                color: $NeutralGrey-01;
+                                font-weight: $regular;
+                                font-size: 1rem;
+                                text-decoration-line: line-through;
+                            }
+                        }
+                        p {
+                            padding-top: 0.5rem;
+                            font-style: italic;
+                            font-weight: $regular;
+                            font-size: 0.875rem;
+                            color: $NeutralGrey-01;
+                        }
+                    }
+                    .mere-details {
+                        padding-top: 0.8125rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5rem;
+                        background: none;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: $medium;
+                        color: $primaryMainColor;
+                        cursor: pointer;
+                        span {
+                            display: inline-flex;
+                        }
+                        &:hover {
+                            span {
+                                transform: translateX(0.625rem);
+                                transition: all 0.5s ease-in;
+                            }
+                        }
+                    }
+                    .btns {
+                        padding-top: 1rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.75rem;
+                        .icon-btn {
+                            cursor: pointer;
+                            width: 3.25rem;
+                            height: 3.25rem;
+                            border-radius: 0.5rem;
+                            background: $Secondary-Main;
+                            border: none;
+                        }
+                        .btn {
+                            cursor: pointer;
+                            border: 0.125rem solid $BlueSecondary-Light;
+                            background: none;
+                            color: $Secondary-Main;
+                            font-size: 1rem;
+                            font-weight: $medium;
+                            width: 12.125rem;
+                            height: 3.25rem;
+                            border-radius: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.newsletter-section {
+    background: $NeutralGrey-04;
+    display: flex;
+    justify-content: space-between;
+    height: 11.375rem;
+    align-items: center;
+    padding: 0 4.5rem;
+    .Subscribe {
+        display: flex;
+        align-items: center;
+        gap: 2.0306rem;
+        .Subscribe-content {
+            h3 {
+                font-size: 2rem;
+                font-weight: $medium;
+                color: $priceColor;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: $regular;
+                color: $TextGrayColor;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .input {
+        width: 34.625rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        background: $bodyColor;
+        position: relative;
+        input {
+            border: none;
+            border-radius: 0.75rem;
+            outline: none;
+            width: 100%;
+            height: 4rem;
+            font-size: 1rem;
+            padding-right: 12rem;
+            padding-left: 1.5rem;
+        }
+        ::placeholder {
+            font-weight: $medium;
+            color: $NeutralGrey-01;
+            font-size: 1rem;
+        }
+        button {
+            position: absolute;
+            right: 0;
+            width: 10.875rem;
+            height: 3.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            top: 0.375rem;
+            background: $Secondary-Main;
+            font-size: 1rem;
+            font-weight: $medium;
+            color: $bodyColor;
+        }
+    }
+}
+.footer {
+    padding: 0 4.5rem;
+    background: $bodyColor;
+
+    .footer-top {
+        padding: 5rem 0 7.75rem;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.0625rem solid $borderColor;
+        .fot-logo {
+            p {
+                font-size: 0.75rem;
+                font-weight: $medium;
+                color: $NeutralGrey-01;
+                padding-top: 0.9375rem;
+            }
+        }
+        .fot-links {
+            ul {
+                list-style: none;
+                li {
+                    font-size: 1rem;
+                    font-weight: $medium;
+                    color: $priceColor;
+                    line-height: 1.5rem;
+                    &:nth-child(2) {
+                        padding-top: 1.25rem;
+                    }
+                    &:nth-child(3) {
+                        padding-top: 1rem;
+                    }
+                    &:nth-child(4) {
+                        padding-top: 1rem;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-weight: $regular;
+                        font-size: 1rem;
+                        color: $TextGrayColor;
+                    }
+                }
+            }
+        }
+        .fot-contact {
+            p {
+                font-size: 1rem;
+                font-weight: $medium;
+                color: $priceColor;
+            }
+            .contact {
+                padding-top: 1.25rem;
+            }
+            .contact-info {
+                padding-top: 1rem;
+            }
+            .contact,
+            .contact-info {
+                display: flex;
+                gap: 1rem;
+                a,
+                p {
+                    text-decoration: none;
+                    font-weight: $regular;
+                    font-size: 1rem;
+                    color: $TextGrayColor;
+                }
+            }
+        }
+        .fot-sociol {
+            p {
+                font-weight: $medium;
+                font-size: 1rem;
+                color: $priceColor;
+            }
+            .sociol-icon {
+                display: flex;
+                gap: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+    .footer-buttom {
+        padding: 2.875rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            font-size: 0.875rem;
+            font-weight: $regular;
+            color: $NeutralGrey-01;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3.8125rem;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 0.875rem;
+                    font-weight: $regular;
+                    color: $TextGrayColor;
+                }
+            }
+        }
+    }
+}
+.active {
+    font-size: 3.125rem;
+}
