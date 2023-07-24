@@ -13,6 +13,16 @@
   width: 100%;
   z-index: 9;
 }
+@media screen and (max-width: 1199px) {
+  .header-section {
+    padding: 0 1.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-section {
+    padding: 0;
+  }
+}
 .header-section .nav-bar {
   height: 5.75rem;
   display: flex;
@@ -23,10 +33,20 @@
   box-shadow: 0rem 0.25rem 1.5625rem 0rem rgba(107, 107, 107, 0.08);
   border-radius: 0.75rem;
 }
+@media screen and (max-width: 1024px) {
+  .header-section .nav-bar {
+    padding: 1.125rem 1rem;
+  }
+}
 .header-section .nav-bar .nav-logo-and-links {
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .header-section .nav-bar .nav-logo-and-links {
+    gap: 1rem;
+  }
 }
 .header-section .nav-bar .nav-logo-and-links .nav-logo {
   display: flex;
@@ -36,6 +56,11 @@
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .header-section .nav-bar .nav-logo-and-links .nav-links {
+    gap: 1rem;
+  }
 }
 .header-section .nav-bar .nav-logo-and-links .nav-links li a {
   text-decoration: none;
@@ -47,6 +72,11 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .header-section .nav-bar .nav-info {
+    gap: 1rem;
+  }
 }
 .header-section .nav-bar .nav-info > div {
   display: flex;
@@ -84,6 +114,11 @@
   border: none;
   cursor: pointer;
 }
+@media screen and (max-width: 1024px) {
+  .header-section .nav-bar .nav-info .btn-primary {
+    padding: 0.75rem 1rem;
+  }
+}
 
 .bg-section {
   background: url("./images/Group 1260.png");
@@ -98,6 +133,11 @@
   top: 9.8125rem;
   width: 100%;
 }
+@media screen and (max-width: 1199px) {
+  .banner-section {
+    padding: 0 1.5rem;
+  }
+}
 .banner-section .banner {
   background: linear-gradient(0deg, #ffc9c0 0%, #ffe8e4 100%);
   margin: auto;
@@ -111,6 +151,11 @@
   padding: 1.125rem 3rem;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .banner-section .banner {
+    padding: 1.125rem 1rem;
+  }
+}
 .banner-section .banner .spacial-offer {
   display: flex;
   align-items: center;
@@ -121,6 +166,11 @@
   font-weight: 400;
   padding-left: 0.75rem;
 }
+@media screen and (max-width: 767px) {
+  .banner-section .banner .spacial-offer p {
+    font-size: 0.75rem;
+  }
+}
 .banner-section .banner .spacial-offer .Offer a {
   display: flex;
   gap: 0.5rem;
@@ -129,6 +179,11 @@
   font-size: 1rem;
   padding-left: 0.875rem;
   color: #EA5A43;
+}
+@media screen and (max-width: 767px) {
+  .banner-section .banner .spacial-offer .Offer a {
+    font-size: 0.75rem;
+  }
 }
 .banner-section .banner .spacial-offer .Offer a .arrow {
   display: inline-flex;
@@ -142,9 +197,24 @@
   font-weight: 500;
   font-size: 1rem;
 }
+@media screen and (max-width: 767px) {
+  .banner-section .banner .spacial-offer-text {
+    font-size: 0.75rem;
+  }
+}
 
 .shop-card-and-listing-section {
   padding: 3rem 4.5rem;
+}
+@media screen and (max-width: 1199px) {
+  .shop-card-and-listing-section {
+    padding: 3rem 1.5rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section {
+    max-width: 100%;
+  }
 }
 .shop-card-and-listing-section .shop-title {
   font-size: 3rem;
@@ -155,14 +225,35 @@
   display: flex;
   gap: 2.625rem;
 }
+@media screen and (max-width: 1024px) {
+  .shop-card-and-listing-section .shop-card-and-listing {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing {
+    flex-wrap: wrap;
+  }
+}
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing {
   min-width: 17.625rem;
   padding-top: 3.0625rem;
+}
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-listing {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    min-width: 100%;
+  }
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS p {
   font-size: 0.75rem;
   font-weight: 500;
   color: #6B6B6B;
+  position: relative;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS p::before {
   position: absolute;
@@ -170,22 +261,38 @@
   width: 0.125rem;
   height: 1rem;
   background: #6B6B6B;
-  left: 3.75rem;
+  left: -12px;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul {
   padding-top: 2.0625rem;
   list-style: none;
+}
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul {
+    padding-top: 0;
+  }
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul li {
   color: #8E8E8E;
   font-size: 1rem;
   font-weight: 400;
 }
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul li {
+    padding-top: 1.5rem;
+  }
+}
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .DEALS-AND-OFFERS ul li:nth-child(2) {
   padding-top: 1.5rem;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES {
   padding-top: 3.0625rem;
+}
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES {
+    padding-top: 0;
+    order: -1;
+  }
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES span {
   color: #8E8E8E;
@@ -202,6 +309,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   color: #6B6B6B;
+  position: relative;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .SERVICES-CATEGORIES-title::before {
   position: absolute;
@@ -209,7 +317,7 @@
   width: 0.125rem;
   height: 1rem;
   background: #6B6B6B;
-  left: 3.75rem;
+  left: -12px;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .SERVICES-CATEGORIES .title {
   display: flex;
@@ -234,6 +342,12 @@
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form {
   padding-top: 3.0625rem;
 }
+@media screen and (max-width: 991px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form {
+    padding-top: 0;
+    min-width: 200px;
+  }
+}
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER {
   display: flex;
   justify-content: space-between;
@@ -246,13 +360,16 @@
   font-size: 0.75rem;
   letter-spacing: 0.0625rem;
 }
+.shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER .selle {
+  position: relative;
+}
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER .selle::before {
   position: absolute;
   content: "";
   width: 0.125rem;
   height: 1rem;
   background: #6B6B6B;
-  left: 3.75rem;
+  left: -12px;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .SELLER .Clear {
   font-weight: 500;
@@ -299,6 +416,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-listing .form .form-check-label::before {
   position: absolute;
@@ -307,7 +425,7 @@
   height: 1.25rem;
   border-radius: 0.25rem;
   border: 0.125rem solid #C9C9C9;
-  left: 4.375rem;
+  left: -2rem;
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-cards {
   width: 100%;
@@ -320,6 +438,11 @@
   width: 19.125rem;
   border-radius: 1rem;
   border: 0.125rem solid #E9E9E9;
+}
+@media screen and (max-width: 575px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card {
+    width: 31.125rem;
+  }
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .best-seller {
   position: absolute;
@@ -364,6 +487,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 575px) {
+  .shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-img {
+    max-width: 30.125rem;
+  }
 }
 .shop-card-and-listing-section .shop-card-and-listing .shop-cards .shop-card .card-content {
   padding: 1rem 1.5rem;
@@ -476,14 +604,30 @@
   align-items: center;
   padding: 2.5rem 4.5rem;
 }
+@media screen and (max-width: 1199px) {
+  .newsletter-section {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .newsletter-section {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
 .newsletter-section .input-wrapper {
   background-color: #ffc9c0;
-  width: 34.625rem;
+  max-width: 34.625rem;
   height: 4rem;
   display: flex;
   justify-content: center;
   background: #FFFFFF;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .newsletter-section .input-wrapper {
+    margin-top: 2rem;
+  }
 }
 .newsletter-section .input-wrapper .form-control {
   border: none;
@@ -523,10 +667,20 @@
   align-items: center;
   gap: 2.0306rem;
 }
+@media screen and (max-width: 991px) {
+  .newsletter-section .Subscribe {
+    gap: 12px;
+  }
+}
 .newsletter-section .Subscribe .Subscribe-content h3 {
   font-size: 2rem;
   font-weight: 500;
   color: #171716;
+}
+@media screen and (max-width: 991px) {
+  .newsletter-section .Subscribe .Subscribe-content h3 {
+    font-size: 1.25rem;
+  }
 }
 .newsletter-section .Subscribe .Subscribe-content p {
   font-size: 1rem;
@@ -539,11 +693,22 @@
   padding: 0 4.5rem;
   background: #FFFFFF;
 }
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 0 1.5rem;
+  }
+}
 .footer .footer-top {
   padding: 5rem 0 7.75rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 0.0625rem solid #E7E5EA;
+}
+@media screen and (max-width: 767px) {
+  .footer .footer-top {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .footer .footer-top .foot-logo p {
   font-size: 0.75rem;
@@ -621,10 +786,20 @@
   font-weight: 400;
   color: #8E8E8E;
 }
+@media screen and (max-width: 575px) {
+  .footer .footer-bottom p {
+    font-size: 0.75rem;
+  }
+}
 .footer .footer-bottom ul {
   list-style: none;
   display: flex;
   gap: 3.8125rem;
+}
+@media screen and (max-width: 575px) {
+  .footer .footer-bottom ul {
+    gap: 1rem;
+  }
 }
 .footer .footer-bottom ul li {
   text-decoration: none;
@@ -632,11 +807,21 @@
   font-weight: 400;
   color: #6B6B6B;
 }
+@media screen and (max-width: 575px) {
+  .footer .footer-bottom ul li {
+    font-size: 0.75rem;
+  }
+}
 
+.searchbox {
+  z-index: 10;
+}
 .searchbox.active {
   border: 2px solid darkgrey;
 }
 .searchbox .search-inp {
+  background-color: #ffc9c0;
+  z-index: 9999;
   width: 0;
   outline: none;
   border: none;

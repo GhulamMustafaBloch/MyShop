@@ -12,6 +12,12 @@
     top: 2rem;
     width: 100%;
     z-index: 9;
+    @media screen and (max-width: 1199px) {
+        padding: 0 1.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+    }
     .nav-bar {
         height: 5.75rem;
         display: flex;
@@ -21,10 +27,16 @@
         align-items: center;
         box-shadow: 0rem 0.25rem 1.5625rem 0rem rgba(107, 107, 107, 0.08);
         border-radius: 0.75rem;
+        @media screen and (max-width: 1024px) {
+            padding: 1.125rem 1rem;
+        }
         .nav-logo-and-links {
             display: flex;
             gap: 2rem;
             align-items: center;
+            @media screen and (max-width: 1024px) {
+                gap: 1rem;
+            }
             .nav-logo {
                 display: flex;
                 align-items: center;
@@ -33,6 +45,9 @@
                 display: flex;
                 list-style: none;
                 gap: 2rem;
+                @media screen and (max-width: 1024px) {
+                    gap: 1rem;
+                }
                 li {
                     a {
                         text-decoration: none;
@@ -47,6 +62,9 @@
             display: flex;
             gap: 2rem;
             align-items: center;
+            @media screen and (max-width: 1024px) {
+                gap: 1rem;
+            }
             &>div{
                 display: flex;
                 align-items: center;
@@ -84,6 +102,9 @@
                 box-shadow: 0rem 0.5625rem 1.5625rem 0rem rgba(234, 90, 67, 0.35);
                 border: none;
                 cursor: pointer;
+                @media screen and (max-width: 1024px) {
+                    padding: 0.75rem 1rem;
+                }
             }
         }
     }
@@ -99,6 +120,9 @@
     position: absolute;
     top: 9.8125rem;
     width: 100%;
+    @media screen and (max-width: 1199px) {
+        padding: 0 1.5rem;
+    }
     .banner {
         background: linear-gradient(0deg, #ffc9c0 0%, #ffe8e4 100%);
         margin: auto;
@@ -111,6 +135,9 @@
         justify-content: space-between;
         padding: 1.125rem 3rem;
         align-items: center;
+        @media screen and (max-width: 767px) {
+            padding: 1.125rem 1rem;
+        }
         .spacial-offer {
             display: flex;
             align-items: center;
@@ -119,6 +146,9 @@
                 font-size: 1rem;
                 font-weight: $regular;
                 padding-left: 0.75rem;
+                @media screen and (max-width: 767px) {
+                    font-size: 0.75rem;
+                }
             }
             .Offer {
                 a{
@@ -129,6 +159,9 @@
                     font-size: 1rem;
                     padding-left: 0.875rem;
                     color: $primaryMainColor;
+                    @media screen and (max-width: 767px) {
+                        font-size: 0.75rem;
+                    }
                     .arrow{
                         display: inline-flex;
                     }
@@ -147,11 +180,20 @@
             color: $priceColor;
             font-weight: $medium;
             font-size: 1rem;
+            @media screen and (max-width: 767px) {
+                font-size: 0.75rem;
+            }
         }
     }
 }
 .shop-card-and-listing-section {
     padding: 3rem 4.5rem;
+    @media screen and (max-width: 1199px) {
+        padding: 3rem 1.5rem;
+    }
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+    }
     .shop-title {
         font-size: 3rem;
         font-weight: $medium;
@@ -160,30 +202,51 @@
     .shop-card-and-listing {
         display: flex;
         gap: 2.625rem;
+        @media screen and (max-width: 1024px) {
+            gap: 1rem;
+        }
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+        }
         .shop-listing {
             min-width: 17.625rem;
             padding-top: 3.0625rem;
+            @media screen and (max-width: 991px) {
+                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: space-between;
+                min-width: 100%;
+            }
             .DEALS-AND-OFFERS {
                 p {
                     font-size: 0.75rem;
                     font-weight: $medium;
                     color: $TextGrayColor;
+                    position: relative;
                     &::before {
                         position: absolute;
                         content: "";
                         width: 0.125rem;
                         height: 1rem;
                         background: $TextGrayColor;
-                        left: 3.75rem;
+                        left: -12px;
                     }
                 }
                 ul {
                     padding-top: 2.0625rem;
                     list-style: none;
+                    @media screen and (max-width: 991px) {
+                        padding-top: 0;
+                    }
                     li {
                         color: $greyRegularColor;
                         font-size: 1rem;
                         font-weight: $regular;
+                        @media screen and (max-width: 991px) {
+                            padding-top: 1.5rem;
+                        }
                     }
                     li:nth-child(2) {
                         padding-top: 1.5rem;
@@ -192,6 +255,10 @@
             }
             .SERVICES-CATEGORIES {
                 padding-top: 3.0625rem;
+                @media screen and (max-width: 991px) {
+                    padding-top: 0;
+                    order: -1;
+                }
                 span {
                     color: $greyRegularColor;
                     font-size: 0.875rem;
@@ -207,13 +274,14 @@
                     font-size: 0.75rem;
                     font-weight: $medium;
                     color: $TextGrayColor;
+                    position: relative;
                     &::before {
                         position: absolute;
                         content: "";
                         width: 0.125rem;
                         height: 1rem;
                         background: $TextGrayColor;
-                        left: 3.75rem;
+                        left: -12px;
                     }
                 }
                 .title {
@@ -239,6 +307,10 @@
             }
             .form {
                 padding-top: 3.0625rem;
+                @media screen and (max-width: 991px) {
+                    padding-top: 0;
+                    min-width: 200px;
+                }
                 .SELLER {
                     display: flex;
                     justify-content: space-between;
@@ -251,13 +323,14 @@
                         letter-spacing: 0.0625rem;
                     }
                     .selle {
+                        position: relative;
                         &::before {
                             position: absolute;
                             content: "";
                             width: 0.125rem;
                             height: 1rem;
                             background: $TextGrayColor;
-                            left: 3.75rem;
+                            left: -12px;
                         }
                     }
                     .Clear {
@@ -306,6 +379,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    position: relative;
                     &::before {
                         position: absolute;
                         content: "";
@@ -313,7 +387,7 @@
                         height: 1.25rem;
                         border-radius: 0.25rem;
                         border: 0.125rem solid $greyMediumColor;
-                        left: 4.375rem;
+                        left: -2rem;
                     }
                 }
             }
@@ -328,6 +402,9 @@
                 width: 19.125rem;
                 border-radius: 1rem;
                 border: 0.125rem solid $greySemiBoldColor;
+                @media screen and (max-width: 575px) {
+                    width: 31.125rem;
+                }
                 .best-seller{
                     position: absolute;
                     padding: 0.5rem 1.5rem;
@@ -383,6 +460,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @media screen and (max-width: 575px) {
+                        max-width: 30.125rem;
+                    }
                 }
                 .card-content {
                     padding: 1rem 1.5rem;
@@ -504,14 +584,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 2.5rem 4.5rem;
+    @media screen and (max-width: 1199px) {
+        padding: 2.5rem 1.5rem;
+    }
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: normal;
+    }
     .input-wrapper{
         background-color: #ffc9c0;
-        width: 34.625rem;
+        max-width: 34.625rem;
         height: 4rem;
         display: flex;
         justify-content: center;
         background: #FFFFFF;
         position: relative;
+        @media screen and (max-width: 767px) {
+            margin-top: 2rem;
+        }
         .form-control{
             border: none;
             border-radius: 0.75rem;
@@ -545,11 +635,17 @@
         display: flex;
         align-items: center;
         gap: 2.0306rem;
+        @media screen and (max-width: 991px) {
+            gap: 12px;
+        }
         .Subscribe-content {
             h3 {
                 font-size: 2rem;
                 font-weight: $medium;
                 color: $priceColor;
+                @media screen and (max-width: 991px) {
+                    font-size: 1.25rem;
+                }
             }
             p {
                 font-size: 1rem;
@@ -563,12 +659,19 @@
 .footer {
     padding: 0 4.5rem;
     background: #FFFFFF;
+    @media screen and (max-width: 1199px) {
+        padding: 0 1.5rem;
+    }
 
     .footer-top {
         padding: 5rem 0 7.75rem;
         display: flex;
         justify-content: space-between;
         border-bottom: 0.0625rem solid $borderColor;
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
         .foot-logo {
             p {
                 font-size: 0.75rem;
@@ -648,25 +751,37 @@
             font-size: 0.875rem;
             font-weight: $regular;
             color: $greyRegularColor;
+            @media screen and (max-width: 575px) {
+                font-size: 0.750rem;
+            }
         }
         ul {
             list-style: none;
             display: flex;
             gap: 3.8125rem;
+            @media screen and (max-width: 575px) {
+                gap: 1rem;
+            }
             li {
                     text-decoration: none;
                     font-size: 0.875rem;
                     font-weight: $regular;
                     color: $TextGrayColor;
+                    @media screen and (max-width: 575px) {
+                        font-size: 0.750rem;
+                    }
             }
         }
     }
 }
 .searchbox{
+    z-index: 10;
     &.active{
         border: 2px solid darkgrey;
     }
     .search-inp{
+        background-color: #ffc9c0;
+        z-index: 9999;
         width: 0;
         outline: none;
         border: none;
