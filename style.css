@@ -15,7 +15,6 @@
 }
 .header-section .nav-bar {
   height: 5.75rem;
-  max-width: 81rem;
   display: flex;
   justify-content: space-between;
   padding: 1.125rem 3rem;
@@ -101,11 +100,12 @@
 }
 .banner-section .banner {
   background: linear-gradient(0deg, #ffc9c0 0%, #ffe8e4 100%);
-  max-width: 81rem;
   margin: auto;
   height: 4rem;
   border-radius: 2.125rem;
   background: url("./images/offer bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   padding: 1.125rem 3rem;
